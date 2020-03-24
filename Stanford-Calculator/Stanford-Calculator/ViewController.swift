@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var display: UILabel!
+    @IBOutlet private weak var display: UILabel!
     
-    var userIsInTheMiddleOfTyping: Bool = false
+    private var userIsInTheMiddleOfTyping: Bool = false
     
-    @IBAction func touchDigit(sender: UIButton) {
+    @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         
         
@@ -30,14 +30,30 @@ class ViewController: UIViewController {
         userIsInTheMiddleOfTyping = true
         
     }
-    
-    @IBAction func performOperation(_ sender: UIButton) {
-        userIsInTheMiddleOfTyping = false
-        if let mathematicalSymbol = sender.currentTitle{
-            if mathematicalSymbol == "pi" {
-                display.text = String(M_PI)
-            }
+//    property
+//    내가 값을 물어볼 때마다 디스플레이에 있는 Double을 가져오고
+//    값을 설정할 때마다 디스플레이의 값을 설정하겠지
+    private var displayValue: Double {
+        get{
+            return Double(display.text!)!
         }
+        set{
+            display.text = String(newValue)
+        }
+    }
+    
+//    private var brain: CalculatorBrain = CalculatorBrain()
+    private var brain = CalculatorBrain()
+    
+    @IBAction private func performOperation(_ sender: UIButton) {
+        if userIsInTheMiddleOfTyping {
+            brain.setOperand(operand: displayValue)
+            userIsInTheMiddleOfTyping = false
+        }
+        if let mathematicalSymbol = sender.currentTitle{
+            brain.performOperation(symbol: mathematicalSymbol)
+        }
+        displayValue = brain.result
     }
     
 }
