@@ -12,6 +12,9 @@
 		0489D892244596FA0089F56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0489D891244596FA0089F56B /* Assets.xcassets */; };
 		0489D895244596FA0089F56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0489D893244596FA0089F56B /* LaunchScreen.storyboard */; };
 		0489D89D2445B06B0089F56B /* SubTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0489D89C2445B06B0089F56B /* SubTab.storyboard */; };
+		0489D8C124481F280089F56B /* GitHubSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C024481F280089F56B /* GitHubSafariViewController.swift */; };
+		0489D8C3244824610089F56B /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C2244824610089F56B /* GitHubModel.swift */; };
+		0489D8C52448260A0089F56B /* GitHubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */; };
 		0F121D6424460F1300B2E4B0 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D6324460F1300B2E4B0 /* GithubViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		0489D894244596FA0089F56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0489D896244596FA0089F56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0489D89C2445B06B0089F56B /* SubTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubTab.storyboard; sourceTree = "<group>"; };
+		0489D8C024481F280089F56B /* GitHubSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSafariViewController.swift; sourceTree = "<group>"; };
+		0489D8C2244824610089F56B /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F121D6324460F1300B2E4B0 /* GithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +64,9 @@
 			children = (
 				0489D888244596E30089F56B /* AppDelegate.swift */,
 				0489D88E244596E30089F56B /* Main.storyboard */,
+				0489D8C024481F280089F56B /* GitHubSafariViewController.swift */,
+				0489D8C2244824610089F56B /* GitHubModel.swift */,
+				0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */,
 				0F121D6324460F1300B2E4B0 /* GithubViewController.swift */,
 				0489D89C2445B06B0089F56B /* SubTab.storyboard */,
 				0489D891244596FA0089F56B /* Assets.xcassets */,
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0489D8C3244824610089F56B /* GitHubModel.swift in Sources */,
 				0489D889244596E30089F56B /* AppDelegate.swift in Sources */,
+				0489D8C124481F280089F56B /* GitHubSafariViewController.swift in Sources */,
+				0489D8C52448260A0089F56B /* GitHubCollectionViewCell.swift in Sources */,
 				0F121D6424460F1300B2E4B0 /* GithubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhj-oc-von">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhj-oc-von">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,29 +26,57 @@
         <!--깃허브-->
         <scene sceneID="Rxa-BN-1ed">
             <objects>
-                <viewController id="BSA-rs-NF7" sceneMemberID="viewController">
+                <viewController id="BSA-rs-NF7" customClass="GithubViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8h-tI-F2v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ulo-mW-Dbf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="25" y="144" width="364" height="569"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dom-bj-mEB">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="136" height="154"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="Xru-FC-o2i">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="Xru-FC-o2i" customClass="GitHubCollectionViewCell" customModule="UITest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZTu-80-mr1">
+                                                    <rect key="frame" x="0.0" y="1.5" width="136" height="112"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ZTu-80-mr1" secondAttribute="height" multiplier="136:115" id="eS1-52-E6T"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-2o-dst">
+                                                    <rect key="frame" x="47" y="125" width="42" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.57656924399999998" green="0.61388767359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZTu-80-mr1" firstAttribute="leading" secondItem="Xru-FC-o2i" secondAttribute="leading" id="8k4-i4-iXP"/>
+                                            <constraint firstItem="dAl-2o-dst" firstAttribute="top" secondItem="ZTu-80-mr1" secondAttribute="bottom" constant="10" id="Lfw-GS-DZ5"/>
+                                            <constraint firstItem="ZTu-80-mr1" firstAttribute="top" secondItem="Xru-FC-o2i" secondAttribute="top" id="N2c-y1-cU0"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZTu-80-mr1" secondAttribute="trailing" id="SE4-VK-NRB"/>
+                                            <constraint firstItem="dAl-2o-dst" firstAttribute="centerX" secondItem="Xru-FC-o2i" secondAttribute="centerX" id="ciZ-FB-jab"/>
+                                            <constraint firstAttribute="bottom" secondItem="dAl-2o-dst" secondAttribute="bottom" constant="11" id="wud-IN-vBQ"/>
+                                        </constraints>
+                                        <size key="customSize" width="136" height="154"/>
+                                        <connections>
+                                            <outlet property="gitHubImageView" destination="ZTu-80-mr1" id="56M-Ly-gXg"/>
+                                            <outlet property="gitHubName" destination="dAl-2o-dst" id="hV3-e0-bo6"/>
+                                            <segue destination="aa6-X1-TbD" kind="show" identifier="showGitHub" id="sXE-mi-4iY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -62,18 +87,49 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ulo-mW-Dbf" firstAttribute="top" secondItem="2Wx-8n-a3u" secondAttribute="top" id="2ej-ox-5MC"/>
-                            <constraint firstItem="2Wx-8n-a3u" firstAttribute="trailing" secondItem="ulo-mW-Dbf" secondAttribute="trailing" id="BA9-8F-1DL"/>
-                            <constraint firstItem="2Wx-8n-a3u" firstAttribute="bottom" secondItem="ulo-mW-Dbf" secondAttribute="bottom" id="F9v-lG-KcX"/>
-                            <constraint firstItem="ulo-mW-Dbf" firstAttribute="leading" secondItem="2Wx-8n-a3u" secondAttribute="leading" id="WEj-L8-Uxx"/>
+                            <constraint firstItem="ulo-mW-Dbf" firstAttribute="leading" secondItem="2Wx-8n-a3u" secondAttribute="leading" constant="25" id="8Vr-rW-pZf"/>
+                            <constraint firstItem="2Wx-8n-a3u" firstAttribute="bottom" secondItem="ulo-mW-Dbf" secondAttribute="bottom" constant="100" id="At2-x4-90g"/>
+                            <constraint firstItem="2Wx-8n-a3u" firstAttribute="trailing" secondItem="ulo-mW-Dbf" secondAttribute="trailing" constant="25" id="KJN-u0-Anb"/>
+                            <constraint firstItem="ulo-mW-Dbf" firstAttribute="top" secondItem="2Wx-8n-a3u" secondAttribute="top" constant="100" id="kXa-Lg-RW0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Wx-8n-a3u"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="깃허브" id="oZy-um-fCP"/>
+                    <connections>
+                        <outlet property="gitHubCollectionView" destination="ulo-mW-Dbf" id="eEZ-D1-lDp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaD-Jf-2sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-765" y="-802"/>
+            <point key="canvasLocation" x="-765.21739130434787" y="-802.23214285714278"/>
+        </scene>
+        <!--Git Hub Safari View Controller-->
+        <scene sceneID="Vcj-Ja-9DU">
+            <objects>
+                <viewController id="aa6-X1-TbD" customClass="GitHubSafariViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bZ-7K-lGv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ㄴㅁㄹㅁ갸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-Uc-C5b">
+                                <rect key="frame" x="59" y="71" width="325" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="huM-uy-1eW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DH6-aM-bbv"/>
+                    <connections>
+                        <outlet property="tempLabel" destination="fVb-Uc-C5b" id="6Mq-aR-hnx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcS-ji-9bs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760.86956521739137" y="-125.22321428571428"/>
         </scene>
         <!--기타-->
         <scene sceneID="4ZQ-Xh-l58">
@@ -146,4 +202,7 @@
             <point key="canvasLocation" x="-1613" y="-1673"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
 </document>
