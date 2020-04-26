@@ -15,6 +15,10 @@
 		0489D8C124481F280089F56B /* GitHubSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C024481F280089F56B /* GitHubSafariViewController.swift */; };
 		0489D8C3244824610089F56B /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C2244824610089F56B /* GitHubModel.swift */; };
 		0489D8C52448260A0089F56B /* GitHubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */; };
+		04B03D502455936900FBA5C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B03D4F2455936900FBA5C5 /* LoginViewController.swift */; };
+		04B03D522455A13700FBA5C5 /* SignView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B03D512455A13700FBA5C5 /* SignView.storyboard */; };
+		04B03D552455A30300FBA5C5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B03D532455A30300FBA5C5 /* SignInViewController.swift */; };
+		04B03D562455A30300FBA5C5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B03D542455A30300FBA5C5 /* SignUpViewController.swift */; };
 		0F121D6424460F1300B2E4B0 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F121D6324460F1300B2E4B0 /* GithubViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		0489D8C024481F280089F56B /* GitHubSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSafariViewController.swift; sourceTree = "<group>"; };
 		0489D8C2244824610089F56B /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 		0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCollectionViewCell.swift; sourceTree = "<group>"; };
+		04B03D4F2455936900FBA5C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B03D512455A13700FBA5C5 /* SignView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignView.storyboard; sourceTree = "<group>"; };
+		04B03D532455A30300FBA5C5 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		04B03D542455A30300FBA5C5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0F121D6324460F1300B2E4B0 /* GithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +72,10 @@
 			children = (
 				0489D888244596E30089F56B /* AppDelegate.swift */,
 				0489D88E244596E30089F56B /* Main.storyboard */,
+				04B03D512455A13700FBA5C5 /* SignView.storyboard */,
+				04B03D4F2455936900FBA5C5 /* LoginViewController.swift */,
+				04B03D532455A30300FBA5C5 /* SignInViewController.swift */,
+				04B03D542455A30300FBA5C5 /* SignUpViewController.swift */,
 				0489D8C024481F280089F56B /* GitHubSafariViewController.swift */,
 				0489D8C2244824610089F56B /* GitHubModel.swift */,
 				0489D8C42448260A0089F56B /* GitHubCollectionViewCell.swift */,
@@ -136,6 +148,7 @@
 			files = (
 				0489D895244596FA0089F56B /* LaunchScreen.storyboard in Resources */,
 				0489D89D2445B06B0089F56B /* SubTab.storyboard in Resources */,
+				04B03D522455A13700FBA5C5 /* SignView.storyboard in Resources */,
 				0489D892244596FA0089F56B /* Assets.xcassets in Resources */,
 				0489D890244596E30089F56B /* Main.storyboard in Resources */,
 			);
@@ -148,6 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B03D552455A30300FBA5C5 /* SignInViewController.swift in Sources */,
+				04B03D502455936900FBA5C5 /* LoginViewController.swift in Sources */,
+				04B03D562455A30300FBA5C5 /* SignUpViewController.swift in Sources */,
 				0489D8C3244824610089F56B /* GitHubModel.swift in Sources */,
 				0489D889244596E30089F56B /* AppDelegate.swift in Sources */,
 				0489D8C124481F280089F56B /* GitHubSafariViewController.swift in Sources */,
